@@ -1,6 +1,7 @@
 import React from 'react';
 import UserCard from './UserCard'; // Get the UserCard Component
 import Counter from './Counter';
+import UserInput from './UserInput';
 
 export default function App() {
   // Create a variable of type User
@@ -11,6 +12,7 @@ export default function App() {
   ,website:
   "def"
   }
+  const retrieveData = (name : string) => alert(`Name has been passed ${name}`);
   const users = [
     {
     id:1,
@@ -40,7 +42,8 @@ export default function App() {
       }
       </ul>
       <Counter/>
-
+      <hr></hr>
+      <UserInput onNameChange={(name:string)=>alert(`Name has been sent ${name}`)}/>
     </div>
   );
 }

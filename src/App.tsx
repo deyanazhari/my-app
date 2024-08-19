@@ -3,7 +3,13 @@ import UserCard from './UserCard'; // Get the UserCard Component
 
 export default function App() {
   // Create a variable of type User
-
+  const
+  profile
+  = {bio:
+  "abc"
+  ,website:
+  "def"
+  }
   const users = [
     {
     id:1,
@@ -26,6 +32,7 @@ export default function App() {
   return (
     <div className='App'>
       <h1>Hello World</h1>
+      <UserCard user={users[0]} profile={profile}/>
       <ul>
       {
         users.map((val)=><li key={val.id}>{val.name} - {val.email} - {val.age}</li>)

@@ -2,6 +2,8 @@ import React from 'react';
 import UserCard from './UserCard'; // Get the UserCard Component
 import Counter from './Counter';
 import UserInput from './UserInput';
+import ConditionalRendering from './ConditionalRendering';
+import LoadingIndicatior from './LoadingIndicator';
 
 export default function App() {
   // Create a variable of type User
@@ -44,6 +46,10 @@ export default function App() {
       <Counter/>
       <hr></hr>
       <UserInput onNameChange={(name:string)=>alert(`Name has been sent ${name}`)}/>
+      <hr></hr>
+      <ConditionalRendering />
+      <hr></hr>
+      <LoadingIndicatior />
     </div>
   );
 }

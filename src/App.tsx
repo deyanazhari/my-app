@@ -1,48 +1,35 @@
 import React from 'react';
-import UserCard from './UserCard';
+import UserCard from './UserCard'; // Get the UserCard Component
 
+export default function App() {
+  // Create a variable of type User
 
-const user = {
-  id: 1,
- name: "Alice",
- age: 28,
- email: "alice@example.com",
-};
-
-const users= [
-  {
-    id: 1,
-   name: "Alice",
-   age: 28,
-   email: "alice@example.com",
+  const users = [
+    {
+    id:1,
+    name:"Alice",
+    age:28,
+    email:"alice@example.com"
   },
   {
-    id: 2,
-   name: "Deyan",
-   age: 23,
-   email: "deyan@example.com",
-  },
-  {
-    id: 3,
-   name: "supri",
-   age: 28,
-   email: "supri@example.com",
+    id:2,
+    name:"John",
+    age:30,
+    email:"john@example.com"
   }
-]
+  ]
+  return (
+    <div className='App'>
+      <h1>Hello World</h1>
+      <ul>
+      {
+        users.map((val)=><li key={val.id}>{val.name} - {val.email} - {val.age}</li>)
+      }
+      </ul>
 
-function App() {
- return (
-   <div>
-     <h1>Hello Wordl</h1>
-
-     <ul>
-
-     </ul>
-     {/* <UserCard user={user} /> */}
-   </div>
- );
+    </div>
+  );
 }
 
-
-export default App;
-
+// Log to console
+console.log('Hello console');

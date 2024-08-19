@@ -13,9 +13,14 @@ export default function App() {
   },
   {
     id:2,
-    name:"John",
+    name:"Deyan",
     age:30,
-    email:"john@example.com"
+    email:"deyan@example.com"
+  },  {
+    id:3,
+    name:"Jono",
+    age:27,
+    email:"jono@example.com"
   }
   ]
   return (

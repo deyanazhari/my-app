@@ -4,7 +4,8 @@ import Counter from './Counter';
 import UserInput from './UserInput';
 import ConditionalRendering from './ConditionalRendering';
 import LoadingIndicatior from './LoadingIndicator';
-
+import StatusMessage from './StatusMessage';
+import Navigation from './Navigation';
 export default function App() {
   // Create a variable of type User
   const
@@ -35,22 +36,29 @@ export default function App() {
   }
   ]
   return (
-    <div className='App'>
-      <h1>Hello World</h1>
-      <UserCard user={users[0]} profile={profile}/>
-      <ul>
-      {
-        users.map((val)=><li key={val.id}>{val.name} - {val.email} - {val.age}</li>)
-      }
-      </ul>
-      <Counter/>
-      <hr></hr>
-      <UserInput onNameChange={(name:string)=>alert(`Name has been sent ${name}`)}/>
-      <hr></hr>
-      <ConditionalRendering />
-      <hr></hr>
-      <LoadingIndicatior />
-    </div>
+    // <div className='App'style={{
+    //   textAlign : 'center',
+    //   backgroundColor : '#339999'
+    // }}>
+    //   <h1>Hello World</h1>
+    //   <UserCard user={users[0]} profile={profile}/>
+    //   <ul>
+    //   {
+    //     users.map((val)=><li key={val.id}>{val.name} - {val.email} - {val.age}</li>)
+    //   }
+    //   </ul>
+    //   <Counter/>
+    //   <hr></hr>
+    //   <UserInput onNameChange={(name:string)=>alert(`Name has been sent ${name}`)}/>
+    //   <hr></hr>
+    //   <ConditionalRendering />
+    //   <hr></hr>
+    //   <LoadingIndicatior />
+    //   <hr></hr>
+    //   <StatusMessage/>
+    //   <hr></hr>
+    // </div>
+    <Navigation />
   );
 }
 

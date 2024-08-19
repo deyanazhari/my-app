@@ -1,5 +1,6 @@
 import React from 'react';
 import UserCard from './UserCard'; // Get the UserCard Component
+import Counter from './Counter';
 
 export default function App() {
   // Create a variable of type User
@@ -38,6 +39,7 @@ export default function App() {
         users.map((val)=><li key={val.id}>{val.name} - {val.email} - {val.age}</li>)
       }
       </ul>
+      <Counter/>
 
     </div>
   );

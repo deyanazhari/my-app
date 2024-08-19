@@ -34,8 +34,11 @@ function App() {
  return (
    <div>
      <h1>Hello Wordl</h1>
-     <h2>This is my first React Website</h2>
-     <UserCard user={user} />
+
+     <ul>
+
+     </ul>
+     {/* <UserCard user={user} /> */}
    </div>
  );
 }

@@ -1,26 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import UserCard from './UserCard';
+
+
+const user = {
+  id: 1,
+ name: "Alice",
+ age: 28,
+ email: "alice@example.com",
+};
+
+const users= [
+  {
+    id: 1,
+   name: "Alice",
+   age: 28,
+   email: "alice@example.com",
+  },
+  {
+    id: 2,
+   name: "Deyan",
+   age: 23,
+   email: "deyan@example.com",
+  },
+  {
+    id: 3,
+   name: "supri",
+   age: 28,
+   email: "supri@example.com",
+  }
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ return (
+   <div>
+     <h1>Hello Wordl</h1>
+     <h2>This is my first React Website</h2>
+     <UserCard user={user} />
+   </div>
+ );
 }
 
+
 export default App;
+
